@@ -1,4 +1,8 @@
 <?php
+/* Ajouts d'un menu dans l'Admin
+-------------------------------*/
+require 'wp-infinite/index.php';
+
 /* Image à la Une
 -------------------------------*/
 add_theme_support('post-thumbnails');
