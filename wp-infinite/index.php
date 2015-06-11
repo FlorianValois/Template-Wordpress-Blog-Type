@@ -71,7 +71,7 @@ function settings(){
         <span class="label">Custom Favicon</span>
         <input type="text" name="options[infinite-favicon]" value="<?= get_option('infinite-favicon', '')?>" />
         
-        <img src="<?php echo get_option('infinite-favicon', get_option('home').'/wp-content/themes/leblogdeflo/img/spacer.jpg" style="border:0;');?>" class="prev_img"/>
+        <img src="<?php echo get_option('infinite-favicon', get_template_directory_uri().'/img/spacer.jpg" style="border:0;');?>" class="prev_img"/>
     </div>
 </div>
 
@@ -122,7 +122,7 @@ function settings(){
        <span class="label">Logo Image</span>
         <input type="text" class="regular-text text-upload" name="options[infinite-logo]" value='<?= get_option('infinite-logo'); ?>'/>
         <input type="button" class="small_button button-upload" value="Upload image"/></br>
-        <img style="max-width: 300px; display: block;" src='<?= get_option('infinite-logo', get_option('home').'/wp-content/themes/leblogdeflo/img/logo.jpg'); ?>' class="preview-upload prev_img" />
+        <img style="max-width: 300px; display: block;" src='<?= get_option('infinite-logo', get_template_directory_uri().'/img/logo.jpg'); ?>' class="preview-upload prev_img" />
     </span>
         <p class="indication-text">Taille recommandée (MAX) : 500px X 100px</p>
     </div>
@@ -136,7 +136,7 @@ function settings(){
        <span class="label">Logo Image</span>
         <input type="text" class="regular-text text-upload" name="options[infinite-logo2]" value='<?= get_option('infinite-logo2'); ?>'/>
         <input type="button" class="small_button button-upload" value="Upload image"/></br>
-        <img style="max-width: 300px; display: block;" src='<?= get_option('infinite-logo2', get_option('home').'/wp-content/themes/leblogdeflo/img/logo.jpg'); ?>' class="preview-upload prev_img" />
+        <img style="max-width: 300px; display: block;" src='<?= get_option('infinite-logo2', get_template_directory_uri().'/img/logo.jpg'); ?>' class="preview-upload prev_img" />
     </span>
         <p class="indication-text">Taille recommandée (MAX) : 500px X 100px</p>
     </div>
@@ -174,13 +174,13 @@ function settings(){
 <div id="style-blog" class="infinite-item">
 <h3>Style Aperçu Articles</h3>
 <div class="infinite-sub-item">
-    <label class="align"><img src="<?= get_option('home').'/wp-content/themes/leblogdeflo/img/style-1.jpg'; ?>" /><br/>
+    <label class="align"><img src="<?= get_template_directory_uri().'/img/style-1.jpg'; ?>" /><br/>
     <input type="radio" name="options[infinite-style-blog]" value="loop-1" <?php if(get_option('infinite-style-blog', '')=='loop-1'){echo'checked="checked" class="style-blog-active"';}?>></label>
 
-    <label class="align"><img src="<?= get_option('home').'/wp-content/themes/leblogdeflo/img/style-2.jpg'; ?>" /><br/>
+    <label class="align"><img src="<?= get_template_directory_uri().'/img/style-2.jpg'; ?>" /><br/>
     <input type="radio" name="options[infinite-style-blog]" value="loop-2" <?php if(get_option('infinite-style-blog', '')=='loop-2'){echo'checked="checked" class="style-blog-active"';}?>></label>
     
-    <label class="align"><img src="<?= get_option('home').'/wp-content/themes/leblogdeflo/img/style-3.jpg'; ?>" /><br/>
+    <label class="align"><img src="<?= get_template_directory_uri().'/img/style-3.jpg'; ?>" /><br/>
     <input type="radio" name="options[infinite-style-blog]" value="loop-3" <?php if(get_option('infinite-style-blog', '')=='loop-3'){echo'checked="checked" class="style-blog-active"';}?>></label>
     
 </div>

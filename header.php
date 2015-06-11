@@ -35,7 +35,7 @@
 <header id="header">
     <div class="inner-wrap">
         <div>
-            <h1><a href="<?php bloginfo('url'); ?>"><img class="logo" src="<?php echo get_option('infinite-logo', get_option('home').'/wp-content/themes/leblogdeflo/img/logo.jpg');?>"></a></h1>
+            <h1><a href="<?php bloginfo('url'); ?>"><img class="logo" src="<?php echo get_option('infinite-logo', get_template_directory_uri().'/img/logo.jpg');?>"></a></h1>
         </div>
     </div>
 </header>
